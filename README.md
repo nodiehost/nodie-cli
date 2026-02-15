@@ -1,7 +1,7 @@
 # Nodie CLI
 
 <p align="center">
-  <img src="https://nodie.host/logo.png" alt="Nodie Logo" width="120">
+  <img src="https://customer-assets.emergentagent.com/job_decnode/artifacts/pf7nri2e_lognodie-dark.png" alt="Nodie Logo" width="200">
 </p>
 
 <p align="center">
@@ -11,7 +11,8 @@
 <p align="center">
   <a href="https://pypi.org/project/nodie-cli/"><img src="https://img.shields.io/pypi/v/nodie-cli.svg" alt="PyPI version"></a>
   <a href="https://pypi.org/project/nodie-cli/"><img src="https://img.shields.io/pypi/pyversions/nodie-cli.svg" alt="Python versions"></a>
-  <a href="https://github.com/nicofirst1/nodie-cli/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://github.com/nodiehost/nodie-cli/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://pypi.org/project/nodie-cli/"><img src="https://img.shields.io/pypi/dm/nodie-cli.svg" alt="Downloads"></a>
 </p>
 
 ---
@@ -41,7 +42,7 @@ pipx install nodie-cli
 ### From Source
 
 ```bash
-git clone https://github.com/nicofirst1/nodie-cli.git
+git clone https://github.com/nodiehost/nodie-cli.git
 cd nodie-cli
 pip install -e .
 ```
@@ -161,7 +162,7 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 
 ```bash
 # Clone the repository
-git clone https://github.com/nicofirst1/nodie-cli.git
+git clone https://github.com/nodiehost/nodie-cli.git
 cd nodie-cli
 
 # Install development dependencies
@@ -181,11 +182,16 @@ MIT License - see [LICENSE](LICENSE) for details.
 ## 🔗 Links
 
 - **Website**: https://nodie.host
+- **PyPI**: https://pypi.org/project/nodie-cli/
 - **Documentation**: https://nodie.host/docs
 - **Support**: https://nodie.host/support
 - **Browser Extension**: [Chrome](https://chromewebstore.google.com/detail/nodie-decentralized-node/mdppdjfemekfodneapklbadphhegpdca) | [Firefox](https://addons.mozilla.org/firefox/addon/nodie/)
 
 ---
+
+<p align="center">
+  <img src="https://customer-assets.emergentagent.com/job_decnode/artifacts/pf7nri2e_lognodie-dark.png" alt="Nodie" width="80">
+</p>
 
 <p align="center">
   Made with ❤️ by the Nodie Team
