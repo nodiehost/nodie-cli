@@ -1,0 +1,96 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nodie-cli"
+version = "1.0.0"
+description = "Nodie CLI - Turn your terminal into a network node and earn rewards"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Nodie Team", email = "support@nodie.host"}
+]
+maintainers = [
+    {name = "Nodie Team", email = "support@nodie.host"}
+]
+keywords = [
+    "nodie",
+    "bandwidth",
+    "node",
+    "network",
+    "cli",
+    "terminal",
+    "rewards",
+    "passive-income",
+    "decentralized"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "click>=8.0.0",
+    "requests>=2.28.0",
+    "rich>=13.0.0",
+    "keyring>=23.0.0",
+    "appdirs>=1.4.4",
+    "psutil>=5.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "ruff>=0.1.0",
+    "black>=23.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+nodie = "nodie_cli.cli:main"
+
+[project.urls]
+Homepage = "https://nodie.host"
+Documentation = "https://nodie.host/docs"
+Repository = "https://github.com/nicofirst1/nodie-cli"
+Issues = "https://github.com/nicofirst1/nodie-cli/issues"
+Changelog = "https://github.com/nicofirst1/nodie-cli/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nodie_cli*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "C4"]
+ignore = ["E501"]
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310", "py311", "py312"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=nodie_cli --cov-report=term-missing"

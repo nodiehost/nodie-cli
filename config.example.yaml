@@ -1,0 +1,13 @@
+# Nodie CLI Configuration
+# This file documents all available configuration options
+
+# API Configuration
+api_url: https://nodie.host/api
+
+# Node Settings
+heartbeat_interval: 30    # Seconds between heartbeats
+speedtest_interval: 300   # Seconds between speed tests
+auto_reconnect: true      # Automatically reconnect on disconnect
+
+# Logging
+log_level: INFO           # DEBUG, INFO, WARNING, ERROR, CRITICAL
