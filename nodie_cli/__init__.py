@@ -2,7 +2,7 @@
 Nodie CLI - Turn your terminal into a network node and earn rewards.
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "Nodie Team"
 __email__ = "support@nodie.host"
 
